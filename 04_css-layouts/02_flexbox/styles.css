@@ -1,0 +1,204 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #444;
+	font-family: sans-serif;
+	border-top: 5px solid #1098ad;
+	position: relative;
+}
+
+.contaniner-fluid {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.main-header {
+	background-color: #eee;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-header h1 {
+	font-style: italic;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #1098ad;
+	transform: scale(1.1);
+}
+
+nav a:last-child {
+	margin-right: 0;
+}
+
+.container {
+	width: 1200px;
+	margin: 20px auto;
+}
+
+h1,
+h2,
+h3 {
+	color: #1098ad;
+}
+
+h2 {
+	position: relative;
+}
+
+h2::after {
+	content: 'TOP';
+	background-color: #ffe70e;
+	color: #444;
+	padding: 2px 6px;
+	top: -10px;
+	right: 0;
+	font-size: 15px;
+	letter-spacing: 1px;
+	position: absolute;
+}
+
+.post-header h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+	margin: 30px 0;
+}
+
+.author-box {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.author-box p {
+	margin-bottom: 0;
+}
+
+button {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	padding: 8px 12px;
+	font-size: 22px;
+}
+
+.post-img {
+	width: 100%;
+	height: auto;
+	margin: 20px 0;
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+h4 {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.html-component,
+.why-learn-html {
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-left: 4rem;
+}
+
+.html-component > li,
+.why-learn-html > li {
+	line-height: 2;
+}
+
+.related li {
+	list-style: none;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+article {
+	flex: 1;
+}
+
+aside {
+	flex: 0 0 350px;
+	border-top: 5px solid #1098ad;
+	border-bottom: 5px solid #1098ad;
+	align-self: start;
+}
+
+aside h4 {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.related li {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.related-post-img {
+	margin-right: 30px;
+}
+
+.related-post-info {
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	text-align: center;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+/* Styling Links
+ * Order is important (LVHA) */
+a:link {
+	color: #1098ad;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #1098ad;
+}
+
+a:hover {
+	color: #ff4500;
+	font-weight: bold;
+}
+
+a:active {
+	background-color: #000;
+	font-style: italic;
+}
