@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat&family=Lato&family=Raleway&display=swap');
+
+:root {
+	--color-one: #834d9b;
+	--color-two: #d04ed6;
+	--pure-white-color: #fff;
+	--modal-background-color: #ccc;
+	--modal-color: rgba(77, 77, 77, 0.7);
+	--modal-close-color: #585858;
+	--close-color: #878787;
+	--background-close-color: #f2f3fb;
+	--close-hover-color: #ebedf9;
+	--hover-color: #1095ad;
+	--red-color: #ff0000;
+	--background-color: #ff4b4b;
+	--border-bottom-color: #ebedf9;
+	--facebook-color: #1877f2;
+	--facebook-border-color: #b7d4fb;
+	--twitter-color: #46c1f6;
+	--twitter-border-color: #b6e7fc;
+	--instagram-color: #e1306c;
+	--instagram-border-color: #f5bccf;
+	--whatsapp-color: #25d366;
+	--whatsapp-border-color: #bef4d2;
+	--telegram-color: #0088cc;
+	--telegram-border-color: #b3e6ff;
+	--field-border-color: #e1e1e1;
+	--field-active-border-color: #ff4b4b;
+	--field-button-hover-color: #1095ad;
+	--box-shadow-color: #000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: var(--background-color);
+}
+
+button {
+	outline: none;
+	cursor: pointer;
+	font-weight: 300;
+	border-radius: 100px;
+	border: 2px solid transparent;
+	/* transition: background 0.1s linear, border-color 0.1s linear,
+    color 0.1s linear; */
+}
+
+.view-modal {
+	top: 50%;
+	left: 50%;
+	background-color: var(--pure-white-color);
+	transform: translate(-50%, -50%);
+	color: var(--background-color);
+	font-size: 18px;
+	padding: 10px 25px;
+}
+
+.popup,
+.view-modal {
+	position: absolute;
+}
+
+.popup {
+	background-color: var(--pure-white-color);
+	padding: 25px;
+	border-radius: 25px;
+	top: -150%;
+	left: -150%;
+	max-width: 380px;
+	width: 100%;
+	opacity: 0;
+	pointer-events: none;
+	box-shadow: 0 0px 3px var(--box-shadow-color);
+	transition: left 0s 0.2s ease-in-out, top 0s 0.2s ease-in-out,
+		opacity 0.2s 0s ease-in-out, transform 0.2s 0s ease-in-out;
+}
+
+/* Don't confuse this with `.popup .show`. Both are differnt.
+`.popup .show` will target an element having a `show` class under `popup` class.
+`.popup.show` will target an element having both classes. */
+.popup.show {
+	top: 50%;
+	left: 50%;
+	opacity: 1;
+	pointer-events: auto;
+	transform: translate(-50%, -50%) scale(1);
+	transition: left 0.2s 0s ease-in-out, top 0.2s 0s ease-in-out,
+		opacity 0.2s 0s ease-in-out, transform 0.2s 0s ease-in-out;
+}
+
+.popup :is(header, .social-media, .field) {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.popup header {
+	padding-bottom: 15px;
+	border-bottom: 15px solid var(-border-bottom-color);
+}
+
+header span {
+	font-size: 21px;
+	font-weight: 600;
+}
+
+header .close,
+.social-media a {
+	display: flex;
+	align-items: center;
+	border-radius: 50%;
+	justify-content: center;
+	transition: all 0.3s ease-in-out;
+}
+
+header .close {
+	color: var(--close-color);
+	font-size: 17px;
+	background-color: var(--close-background-color);
+	height: 33px;
+	width: 33px;
+	cursor: pointer;
+}
+
+header .close:hover {
+	background-color: var(--close-hover-color);
+}
+
+.popup .content {
+	margin: 20px 0;
+}
+
+.popup .social-media {
+	margin: 15px 0 20px 0;
+}
+
+.content p {
+	font-size: 16px;
+}
+
+.content .social-media a {
+	height: 50px;
+	width: 50px;
+	font-size: 20px;
+	text-decoration: none;
+	border: 1px solid transparent;
+	/* box-shadow: 0 0 5px var(--box-shadow-color); */
+}
+
+.social-media a i {
+	transition: transform 0.3s ease-in-out;
+}
+
+.social-media a:nth-child(1) {
+	color: var(--facebook-color);
+	border-color: var(--facebook-border-color);
+}
+
+.social-media a:nth-child(1):hover {
+	background-color: var(--facebook-color);
+}
+
+.social-media a:nth-child(2) {
+	color: var(--twitter-color);
+	border-color: var(--twitter-border-color);
+}
+
+.social-media a:nth-child(2):hover {
+	background-color: var(--twitter-color);
+}
+
+.social-media a:nth-child(3) {
+	color: var(--instagram-color);
+	border-color: var(--instagram-border-color);
+}
+
+.social-media a:nth-child(3):hover {
+	background-color: var(--instagram-color);
+}
+
+.social-media a:nth-child(4) {
+	color: var(--whatsapp-color);
+	border-color: var(--whatsapp-border-color);
+}
+
+.social-media a:nth-child(4):hover {
+	background-color: var(--whatsapp-color);
+}
+
+.social-media a:nth-child(5) {
+	color: var(--telegram-color);
+	border-color: var(--telegram-border-color);
+}
+
+.social-media a:nth-child(5):hover {
+	background-color: var(--telegram-color);
+}
+
+.social-media a:hover {
+	color: var(--pure-white-color);
+	border-color: transparent;
+}
+
+.social-media a:hover i {
+	transform: scale(1.2);
+}
+
+.content .field {
+	margin: 12px 0 -5px 0;
+	height: 45px;
+	border-radius: 4px;
+	padding: 0 5px;
+	border: 1px solid var(--field-border-color);
+}
+
+.field .active {
+	border-color: var(--background-color);
+}
+
+.field i {
+	width: 50px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.field.active i {
+	color: var(--background-color);
+}
+
+.field input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	font-size: 15px;
+}
+
+.field button {
+	color: var(--pure-white-color);
+	padding: 5px 18px;
+	background-color: var(--background-color);
+}
+
+.field button:hover {
+	background-color: var(--background-color);
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+	--pure-white-color: #fff;
+	--pure-black-color: #000;
+	--body-color: #444;
+	--button-background-color: #e67e22;
+	--section-background-color: #f7f7f7;
+	--image-gradient-color: rgba(34, 34, 34, 0.6);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+	color: var(--body-color);
+	line-height: 1;
+}
+
+header {
+	height: 100vh;
+	position: relative;
+	background-image: linear-gradient(
+			var(--image-gradient-color),
+			var(--image-gradient-color)
+		),
+		url('../../common-resources/img/hero.jpg');
+	background-size: cover;
+	color: var(--pure-white-color);
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header-container {
+	width: 1200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header-container-inner {
+	width: 50%;
+}
+nav {
+	font-size: 20px;
+	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 32px;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 52px;
+	margin: 32px 0;
+}
+
+h2 {
+	font-size: 44px;
+	margin-bottom: 48px;
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.6;
+	margin-bottom: 48px;
+}
+
+.btn:link,
+.btn:visited {
+	font-size: 20px;
+	font-weight: 600;
+	background-color: var(--button-background-color);
+	color: var(--pure-white-color);
+	text-decoration: none;
+	display: inline-block;
+	padding: 16px 32px;
+	border-radius: 10px;
+}
+
+section {
+	padding: 96px 0;
+	background-color: var(--section-background-color);
+}
