@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>
-			Blog Page on CSS Float | Chapter 04 : CSS Layouts | HTML & CSS Playground
-		</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Blog Page on CSS Float | Chapter 04 : CSS Layouts | HTML & CSS Playground
+    </title>
 
-		<link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./common.css" />
 
-		<!-- Favicon -->
-		<link
-			rel="shortcut icon"
-			href="../../common-resources/img/html-icons/icons8-html-5-color-120.png"
-			type="image/x-icon"
-		/>
-	</head>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../../common-resources/img/html-icons/icons8-html-5-color-120.png"
+      type="image/x-icon"
+    />
+  </head>
 
-	<body>
-		<div class="container">
-			<a href="./index.html" class="back-to-homepage">Back to Homepage</a>
+  <body>
+    <div class="container">
+      <a href="./index.html" class="back-to-homepage">Back to Homepage</a>
 
-			<div class="blog">
-				<h1 class="blog-heading">The CSS Float Property</h1>
-				<p class="blog-body">
-					<br />
-					The CSS float property is used to position an element to the left or
-					right within its container, allowing text and inline elements to wrap
-					around it. Here's a brief overview of how it works:
-				</p>
-				<ol class="blog-list">
-					<li>
-						<strong>Applying Float: </strong>When an element is floated using
-						float: left or float: right, it moves to the respective side of its
-						containing element.
-					</li>
-					<li>
-						<strong>Content Wrapping: </strong>Non-floated block elements will
-						not wrap around floated elements, but inline elements, such as text
-						and inline-block elements, will wrap around the floated element.
-					</li>
-					<li>
-						<strong>Removing Float: </strong>To ensure that a container properly
-						wraps around floated elements inside it, the clear property is used.
-						Applying clear: both to an element will prevent it from sitting next
-						to any floated elements, ensuring it moves below them.
-					</li>
-					<li class="parent-list-item">
-						<strong>Clearing Floats: </strong>A common technique to clear floats
-						is to use the clearfix hack. This involves adding a clearfix class
-						to the container and applying the following CSS:
-						<div class="example-parent">
-							<div class="example">
-								<p>.clearfix::after {<br /></p>
-								<p class="padding-tab">content: ""; <br /></p>
-								<p class="padding-tab">display: block;<br /></p>
-								<p class="padding-tab">clear: both;<br /></p>
-								}
-							</div>
-						</div>
-					</li>
-					<li>
-						<strong> Float Impact on Layout: </strong>Floated elements are
-						removed from the normal document flow, meaning that other elements
-						will not recognize their space, potentially causing layout issues if
-						not managed properly.
-					</li>
-				</ol>
-				<h2 class="blog-subheading">Summary</h2>
-				<p>
-					Using CSS float allows for basic layout manipulations and text
-					wrapping around elements, but it can introduce layout complexities and
-					often requires additional handling with clear properties or clearfix
-					techniques.
-				</p>
-			</div>
-		</div>
-	</body>
+      <div class="blog">
+        <h1 class="blog-heading">The CSS Float Property</h1>
+        <p class="blog-body">
+          <br />
+          The CSS float property is used to position an element to the left or
+          right within its container, allowing text and inline elements to wrap
+          around it. Here's a brief overview of how it works:
+        </p>
+        <ol class="blog-list">
+          <li>
+            <strong>Applying Float: </strong>When an element is floated using
+            float: left or float: right, it moves to the respective side of its
+            containing element.
+          </li>
+          <li>
+            <strong>Content Wrapping: </strong>Non-floated block elements will
+            not wrap around floated elements, but inline elements, such as text
+            and inline-block elements, will wrap around the floated element.
+          </li>
+          <li>
+            <strong>Removing Float: </strong>To ensure that a container properly
+            wraps around floated elements inside it, the clear property is used.
+            Applying clear: both to an element will prevent it from sitting next
+            to any floated elements, ensuring it moves below them.
+          </li>
+          <li class="parent-list-item">
+            <strong>Clearing Floats: </strong>A common technique to clear floats
+            is to use the clearfix hack. This involves adding a clearfix class
+            to the container and applying the following CSS:
+            <div class="example-parent">
+              <div class="example">
+                <p>.clearfix::after {<br /></p>
+                <p class="padding-tab">content: ""; <br /></p>
+                <p class="padding-tab">display: block;<br /></p>
+                <p class="padding-tab">clear: both;<br /></p>
+                }
+              </div>
+            </div>
+          </li>
+          <li>
+            <strong> Float Impact on Layout: </strong>Floated elements are
+            removed from the normal document flow, meaning that other elements
+            will not recognize their space, potentially causing layout issues if
+            not managed properly.
+          </li>
+        </ol>
+        <h2 class="blog-subheading">Summary</h2>
+        <p>
+          Using CSS float allows for basic layout manipulations and text
+          wrapping around elements, but it can introduce layout complexities and
+          often requires additional handling with clear properties or clearfix
+          techniques.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>

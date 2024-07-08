@@ -1,36 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-	--pure-white-color: #fff;
-	--pure-black-color: #000;
-	--body-color: #343a40;
-	--menu-color: #7048e8;
-	--button-color: #5f3dc4;
-	--email-container-color: #e9ecef;
-	--email-color: #adb5bd;
-	--button-last-child-color: #d6336c;
+  --pure-white-color: #fff;
+  --pure-black-color: #000;
+  --body-color: #343a40;
+  --menu-color: #7048e8;
+  --button-color: #5f3dc4;
+  --email-container-color: #e9ecef;
+  --email-color: #adb5bd;
+  --button-last-child-color: #d6336c;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Rubik', sans-serif;
-	color: var(--body-color);
-	line-height: 1;
-	text-align: center;
-	font-weight: bold;
-	font-size: 24px;
+  font-family: 'Rubik', sans-serif;
+  color: var(--body-color);
+  line-height: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 #wrapper {
-	height: 100vh;
-	display: grid;
-	grid-template-columns: 80px 400px 1fr 250px;
-	grid-template-rows: 80px 1fr;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 80px 400px 1fr 250px;
+  grid-template-rows: 80px 1fr;
 }
 
 nav,
@@ -38,58 +38,58 @@ menu,
 main,
 #email-container,
 aside {
-	padding-top: 24px;
+  padding-top: 24px;
 }
 
 nav {
-	background-color: var(--body-color);
-	color: var(--pure-white-color);
-	grid-row: 1 / -1;
+  background-color: var(--body-color);
+  color: var(--pure-white-color);
+  grid-row: 1 / -1;
 }
 
 menu {
-	background-color: var(--menu-color);
-	grid-column: 2 / -1;
-	display: flex;
-	align-items: center;
-	gap: 12px;
-	padding: 0 40px;
+  background-color: var(--menu-color);
+  grid-column: 2 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 40px;
 }
 
 button {
-	display: inline-block;
-	font-size: 16px;
-	font-weight: bold;
-	border: none;
-	cursor: pointer;
-	padding: 8px 12px;
-	background-color: var(--button-color);
-	color: var(--pure-white-color);
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  background-color: var(--button-color);
+  color: var(--pure-white-color);
 }
 
 button:last-child {
-	background-color: var(--button-last-child-color);
-	margin-left: auto;
+  background-color: var(--button-last-child-color);
+  margin-left: auto;
 }
 
 #email-container {
-	background-color: var(--email-container-color);
-	display: flex;
-	flex-direction: column;
-	gap: 40px;
-	padding: 40px;
-	overflow: scroll;
+  background-color: var(--email-container-color);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  overflow: scroll;
 }
 
 .email {
-	background-color: var(--email-color);
-	height: 96px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-shrink: 0;
+  background-color: var(--email-color);
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 aside {
-	background-color: var(--email-container-color);
+  background-color: var(--email-container-color);
 }

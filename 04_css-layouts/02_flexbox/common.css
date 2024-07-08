@@ -1,44 +1,44 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-	width: 80%;
-	margin: 3rem auto;
-	font-family: 'Segoe UI';
+  width: 80%;
+  margin: 3rem auto;
+  font-family: 'Segoe UI';
 }
 
 .back-to-homepage {
-	font-size: 18px;
-	color: #1098ad;
-	text-decoration: none;
+  font-size: 18px;
+  color: #1098ad;
+  text-decoration: none;
 }
 
 .back-to-homepage:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .blog-heading {
-	margin-top: 1rem;
-	font-weight: 300;
-	text-align: center;
-	letter-spacing: 3px;
-	word-spacing: 2px;
+  margin-top: 1rem;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 3px;
+  word-spacing: 2px;
 }
 
 .blog-subheading {
-	margin-top: 1rem;
-	font-weight: 200;
-	text-align: left;
-	letter-spacing: 2px;
-	line-height: 2;
+  margin-top: 1rem;
+  font-weight: 200;
+  text-align: left;
+  letter-spacing: 2px;
+  line-height: 2;
 }
 
 .blog-body {
-	color: #666;
-	line-height: 1.8;
-	letter-spacing: 1px;
-	word-spacing: 1px;
+  color: #666;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-spacing: 1px;
 }

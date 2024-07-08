@@ -1,63 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat&family=Lato&family=Raleway&display=swap');
 
 :root {
-	--main-color: #087f5b;
-	--border-color: #343a40;
-	--odd-background-color: #f8f9fa;
-	--even-background-color: #e9ecef;
-	--pure-white-color: #fff;
+  --main-color: #087f5b;
+  --border-color: #343a40;
+  --odd-background-color: #f8f9fa;
+  --even-background-color: #e9ecef;
+  --pure-white-color: #fff;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	color: var(--border-color);
-	line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--border-color);
+  line-height: 1;
 }
 
 .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 table {
-	width: 800px;
-	font-size: 18px;
-	/* border: 1px solid var(--border-color); */
-	border-collapse: collapse;
+  width: 800px;
+  font-size: 18px;
+  /* border: 1px solid var(--border-color); */
+  border-collapse: collapse;
 }
 
 th {
-	font-weight: 300;
+  font-weight: 300;
 }
 
 th,
 td {
-	/* border: 1px solid var(--border-color); */
-	padding: 16px 24px;
-	text-align: left;
+  /* border: 1px solid var(--border-color); */
+  padding: 16px 24px;
+  text-align: left;
 }
 
 thead tr {
-	background-color: var(--main-color);
-	color: var(--pure-white-color);
+  background-color: var(--main-color);
+  color: var(--pure-white-color);
 }
 
 thead th {
-	width: 25%;
+  width: 25%;
 }
 
 tbody tr:nth-child(odd) {
-	background-color: var(--odd-background-color);
+  background-color: var(--odd-background-color);
 }
 
 tbody tr:nth-child(even) {
-	background-color: var(--even-background-color);
+  background-color: var(--even-background-color);
 }

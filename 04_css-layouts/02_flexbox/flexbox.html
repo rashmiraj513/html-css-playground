@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Flexbox | Chapter 04: CSS Layouts | HTML & CSS Playground</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox | Chapter 04: CSS Layouts | HTML & CSS Playground</title>
 
-		<!-- Favicon -->
-		<link
-			rel="shortcut icon"
-			href="../../common-resources/img/html-icons/icons8-html-5-color-120.png"
-			type="image/x-icon"
-		/>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../../common-resources/img/html-icons/icons8-html-5-color-120.png"
+      type="image/x-icon"
+    />
 
-		<!-- Internal CSS -->
-		<style>
-			.container {
-				font-family: sans-serif;
-				background-color: #ddd;
-				font-size: 32px;
-				margin: 40px;
+    <!-- Internal CSS -->
+    <style>
+      .container {
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 32px;
+        margin: 40px;
 
-				display: flex;
-				align-items: center;
-				justify-content: flex-start;
-				gap: 10px;
-			}
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+      }
 
-			.el-1 {
-				background-color: blueviolet;
-				order: 2;
-				align-self: flex-start;
-				flex-grow: 3;
-			}
+      .el-1 {
+        background-color: blueviolet;
+        order: 2;
+        align-self: flex-start;
+        flex-grow: 3;
+      }
 
-			.el-2 {
-				background-color: orangered;
-			}
+      .el-2 {
+        background-color: orangered;
+      }
 
-			.el-3 {
-				background-color: green;
-				height: 150px;
-			}
+      .el-3 {
+        background-color: green;
+        height: 150px;
+      }
 
-			.el-4 {
-				background-color: goldenrod;
-			}
+      .el-4 {
+        background-color: goldenrod;
+      }
 
-			.el-5 {
-				background-color: palevioletred;
-				order: 1;
-			}
+      .el-5 {
+        background-color: palevioletred;
+        order: 1;
+      }
 
-			.el-6 {
-				background-color: steelblue;
-				order: -1;
-			}
+      .el-6 {
+        background-color: steelblue;
+        order: -1;
+      }
 
-			.el-7 {
-				background-color: yellow;
-			}
+      .el-7 {
+        background-color: yellow;
+      }
 
-			.el-8 {
-				background-color: crimson;
-			}
+      .el-8 {
+        background-color: crimson;
+      }
 
-			.el {
-				/* margin-left: 10px; */
-				/*
+      .el {
+        /* margin-left: 10px; */
+        /*
         DEFAULTS:
         flex-grow: 0; // Decides what amount of empty space this element will get.
         flex-shrink: 1; // Allowed to shrink or not
@@ -74,23 +74,23 @@
 
         flex is shorthand for all above three.
         */
-				flex: 1;
+        flex: 1;
 
-				/* flex-basis: 200px;
+        /* flex-basis: 200px;
         flex-grow: 1; */
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<div class="el el-1">HTML</div>
-			<div class="el el-2">and</div>
-			<div class="el el-3">CSS</div>
-			<div class="el el-4">are</div>
-			<div class="el el-5">amazing</div>
-			<div class="el el-6">languages</div>
-			<!-- <div class="el el-7">to</div>
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el el-1">HTML</div>
+      <div class="el el-2">and</div>
+      <div class="el el-3">CSS</div>
+      <div class="el el-4">are</div>
+      <div class="el el-5">amazing</div>
+      <div class="el el-6">languages</div>
+      <!-- <div class="el el-7">to</div>
 			<div class="el el-8">learn</div> -->
-		</div>
-	</body>
+    </div>
+  </body>
 </html>
